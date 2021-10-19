@@ -1,0 +1,267 @@
+div#edit-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div#edit-area {
+	width: 85%;
+	height: 85%;
+	background-color: #EEE;
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+button#close-edit {
+	align-self: flex-end;
+	width: 4em;
+	height: 3em;
+	margin-bottom: -3em;
+	background-color: #EEE;
+	border: none;
+	transition: all 0.15s linear;
+	cursor: pointer;
+	margin-right: -20px;
+	z-index: 1000;
+}
+
+button#close-edit:hover {
+	background-color: #992200;
+	color: #FFF;
+}
+
+button#save-edit {
+	position: relative;
+	width: 100%;
+	height: 5em;
+	background-color: #CCC;
+	border: none;
+	transition: all 0.15s linear;
+	cursor: pointer;
+	margin-right: -20px;
+	font-weight: bold;
+}
+
+button#save-edit:hover {
+	background-color: #333;
+	color: #FFF;
+}
+
+
+/* -------------- */
+
+div#edit-area > h2 {
+
+}
+
+div#edit-area div#form {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+div#fields {
+	display: flex;
+	flex-direction: column;
+	height: calc(100%-40px);
+	overflow-y: scroll;
+	margin-bottom: 10px;
+}
+
+div#form {
+	height: 100px;
+}
+
+div#fields > label {
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #CCC;
+	font-size: 1.2em;
+}
+
+div#fields > label > p, div.paths > p {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+div#edit-area input,
+div#edit-area select {	
+	font-size: 1em;
+	width: 150px;
+	margin-right: 5px;
+	outline: none;
+}
+
+select.feedstock {
+	border-bottom: 4px solid #637F71;
+}
+
+select.block {
+	border-bottom: 4px solid #666;
+}
+
+select.stream {
+	border-bottom: 4px solid #476B8E;
+}
+
+select.supply {
+	border-bottom: 4px solid #935B77;
+}
+
+select.utility {
+	border-bottom: 4px solid #B2B2B2;
+}
+
+
+
+p.equation {
+	padding: 20px;
+	border: 2px solid #CCC;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+
+p.units {
+	margin: 0;
+}
+
+span.units {
+	color: blue;
+}
+
+/* ---------- */
+
+/* Path inputs */
+
+div.paths {
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+	font-size: 1.2em;
+}
+
+div.path-with-input {
+	display: flex;
+	margin-bottom: 3px;
+}
+
+div.paths > button.add {
+	height: 2em;
+	width: 6em;
+	background-color: #CCC;
+	border: none;
+	transition: all 0.15s linear;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+div.paths > button.add:hover {
+	background-color: #333;
+	color: #FFF;
+}
+
+div.path-with-input > button.remove, div.input-form > button.remove {
+	background-color: #CCC;
+	border: none;
+	transition: all 0.15s linear;
+	cursor: pointer;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 0.6em;
+}
+
+div.path-with-input > button.remove:hover, div.input-form > button.remove:hover {
+	background-color: #992200;
+	color: #FFF;
+}
+
+
+
+/* ----------- */
+
+
+div#fields::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+div#fields::-webkit-scrollbar {
+	width: 15px;
+	height: 10px;
+	background-color: transparent;
+}
+
+div#fields::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #999;
+}
+
+/* ----- */
+
+a#download {
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #CCC;
+	transition: all 0.2s linear;
+}
+
+a#download:hover {
+	color: #FFF;
+	background-color: #999;
+}
+
+/* Import from aspen windows */
+
+div.input-form > button.remove {
+	background-color: #CCC;
+	border: none;
+	transition: all 0.15s linear;
+	cursor: pointer;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 0.6em;
+}
+
+/* Toggles */
+
+span.toggle {
+	display: flex;
+	align-items: center;
+}
+
+span.toggle:hover {
+	cursor: pointer;
+}
+
+button.toggle {
+	cursor: pointer;
+	color: transparent;
+	background-color: transparent;
+	border: 1px solid #666;
+	padding: 3px 4px;
+	margin-right: 20px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+button.toggle:active {
+	transform: scale(0.95)
+}
+
+
+button.toggle_on {
+	color: #666;
+}

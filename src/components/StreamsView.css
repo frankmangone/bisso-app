@@ -1,0 +1,98 @@
+div.feedstock-wrapper {
+	background-color: #C4DACF;
+	margin-right: 10px;
+}
+
+div.feedstock-wrapper:hover {
+	background-color: #8CAA9B;
+}
+
+div.feedstock-wrapper:hover > p {
+	color: #FFF;
+}
+
+div.feedstock-wrapper > button.option {
+	margin-top: 0px;
+  	background-color: #637F71;
+}
+
+div.feedstock-wrapper > button.option:hover {
+  	background-color: #3A5648;
+  	color: #FFF;
+}
+
+/* ----------- */
+
+div.stream-wrapper {
+	background-color: #C3CDD8;
+	margin-right: 10px;
+}
+
+div.stream-wrapper:hover {
+	background-color: #8C9AAA;
+}
+
+div.stream-wrapper:hover > p {
+	color: #FFF;
+}
+
+div.stream-wrapper > button.option {
+  	background-color: #63717F;
+}
+
+div.stream-wrapper > button.option:hover {
+  	background-color: #3A4856;
+  	color: #FFF;
+}
+
+/* ----------- */
+
+div.supply-wrapper {
+	background-color: #D8C3CD;
+	margin-right: 10px;
+}
+
+div.supply-wrapper:hover {
+	background-color: #AA8C9A;
+}
+
+div.supply-wrapper:hover > p {
+	color: #FFF;
+}
+
+div.supply-wrapper > button.option {
+  	background-color: #7F6371;
+}
+
+div.supply-wrapper > button.option:hover {
+  	background-color: #563A48;
+  	color: #FFF;
+}
+
+/* ----------- */
+
+div.utility-wrapper {
+	background-color: #F2F2F2;
+	margin-right: 10px;
+}
+
+div.utility-wrapper:hover {
+	background-color: #DDDDDD;
+}
+
+div.utility-wrapper:hover > p {
+	color: #333;
+}
+
+div.utility-wrapper > button.option {
+  	background-color: #B2B2B2;
+}
+
+div.utility-wrapper > button.option:hover {
+  	background-color: #898989;
+  	color: #FFF;
+}
+
+
+
+

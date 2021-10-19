@@ -1,0 +1,149 @@
+button {
+	outline: none;
+}
+
+select {
+	cursor: pointer;
+}
+
+button.add {
+	transition: all 0.15s linear;
+}
+
+button.add:hover {
+	background-color: #999;
+	color: #FFF;
+}
+
+
+div.view-container {
+  margin: 10px;
+  margin-top: 60px;
+}
+
+/* ------------------ */
+
+div.wrapper {
+	cursor: pointer;
+	transition: all 0.15s linear;
+	padding: 2em 1em;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-bottom: 10px;
+	width: 10em;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+div.wrapper:hover > button.option {
+	opacity: 1;
+}
+
+
+
+div.wrapper > p {
+	grid-column-start: 1;
+  	grid-column-end: 3;
+  	justify-self: center;
+  	margin-bottom: 0;
+  	font-weight: bold;
+  	font-size: 1em;
+}
+
+div.wrapper > button.option {
+  	cursor: pointer;
+  	transition: all 0.15s linear;
+  	opacity: 0;
+  	font-size: 1.4em;
+  	width: 2.2em;
+  	border: none;
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+}
+
+div.wrapper > button.edit {
+  	justify-self: right;
+  	margin-right: 5px;
+}
+
+div.wrapper > button.import {
+  	justify-self: left;
+  	margin-left: 5px;
+}
+
+div.wrapper > button.run {
+  	justify-self: right;
+  	margin-right: 5px;
+  	margin-top: 5px;
+}
+
+div.wrapper > button.delete {
+  	justify-self: left;
+  	margin-left: 5px;
+}
+
+div.block-wrapper > button.delete {
+  	margin-top: 5px;
+}
+
+
+
+/* ------------------ */
+/* Streams */
+
+div.view-container > div.horizontal-display {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+	padding: 10px 10px 0px 10px;
+	width: calc(100%-40px);
+	border: 3px solid #CCC;
+}
+
+div.view-container > div.horizontal-display  div.wrapper {
+	flex-basis: 10em;
+	margin-bottom: 10px;
+}
+
+div.view-container > div.horizontal-display > h3 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	width: 100%;
+}
+
+div.view-container > div.horizontal-display > button.add {
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 10px;
+	border: none;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+div.view-container > div.horizontal-display > button.add:hover {
+	cursor: pointer;
+	color: #000;
+}
+
+/* ------------------ */
+
+div.optimization-view {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.optimization-block {
+	padding: 30px;
+	margin-top: 20px;
+	border: 3px solid #CCC;
+	width: 100%;
+}
+
+div.optimization-block > p {
+	margin-top: 0px;
+	font-weight: bold;
+}

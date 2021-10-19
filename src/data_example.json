@@ -1,0 +1,123 @@
+{
+  "Linea_EGrand_Chip.bkp": [
+    {
+      "COND-LIGNO": {
+        "inputs": [
+          {
+            "aspen_name": "E-GRAND",
+            "problem_name": "FEEDSTOCK",
+            "value": 27777.79,
+            "units": "dimless"
+          }
+        ],
+        "outputs": [
+          {
+            "aspen_name": "EGCHIPS",
+            "problem_name": "CHIPS",
+            "value": 27777.79,
+            "units": "dimless"
+          }
+        ],
+        "supplies": [],
+        "key_stream": [
+          {
+            "aspen_name": "E-GRAND",
+            "problem_name": "FEEDSTOCK",
+            "value": 27777.79,
+            "units": "kg/h"
+          }
+        ]
+      }
+    },
+    {
+      "OSOLV": {
+        "inputs": [
+          {
+            "aspen_name": "EGCHIPS",
+            "problem_name": "CHIPS",
+            "value": 27777.79,
+            "units": "dimless"
+          }
+        ],
+        "outputs": [
+          {
+            "aspen_name": "PURGE",
+            "problem_name": "PURGE",
+            "value": 730.809237,
+            "units": "dimless"
+          },
+          {
+            "aspen_name": "CONCBL",
+            "problem_name": "BLACK-LIQUOR",
+            "value": 11060.6861,
+            "units": "dimless"
+          },
+          {
+            "aspen_name": "PULP",
+            "problem_name": "PULP",
+            "value": 17178.7169,
+            "units": "dimless"
+          }
+        ],
+        "supplies": [
+          {
+            "aspen_name": "REPOS",
+            "problem_name": "ETHANOL",
+            "value": 1189.7168,
+            "units": "dimless"
+          }
+        ],
+        "key_stream": [
+          {
+            "aspen_name": "EGCHIPS",
+            "problem_name": "CHIPS",
+            "value": 27777.79,
+            "units": "kg/h"
+          }
+        ]
+      }
+    },
+    {
+      "ENZ-HYD": {
+        "inputs": [
+          {
+            "aspen_name": "PULP",
+            "problem_name": "PULP",
+            "value": 17178.7169,
+            "units": "dimless"
+          }
+        ],
+        "outputs": [
+          {
+            "aspen_name": "PROD",
+            "problem_name": "GLUCOSE",
+            "value": 27755.6013,
+            "units": "dimless"
+          }
+        ],
+        "supplies": [
+          {
+            "aspen_name": "ENZYME",
+            "problem_name": "ENZYME",
+            "value": 10575.0935,
+            "units": "dimless"
+          },
+          {
+            "aspen_name": "H2SO4",
+            "problem_name": "SULF-ACID",
+            "value": 1.82779916,
+            "units": "dimless"
+          }
+        ],
+        "key_stream": [
+          {
+            "aspen_name": "PULP",
+            "problem_name": "PULP",
+            "value": 17178.7169,
+            "units": "kg/h"
+          }
+        ]
+      }
+    }
+  ]
+}

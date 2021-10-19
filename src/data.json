@@ -1,0 +1,449 @@
+{
+  "feedstocks": [
+    {
+      "name": "EUC-GRAND",
+      "unit_cost": 0.5
+    },
+    {
+      "name": "WHEY",
+      "unit_cost": 0.5
+    }
+  ],
+  "stages": [
+    {
+      "number": 1,
+      "blocks": [
+        {
+          "name": "BLANK-1",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        },
+        {
+          "name": "COND-LIG",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [
+            {
+              "feedstock": 0,
+              "path": [],
+              "value": 19000
+            }
+          ],
+          "outputs": [
+            {
+              "feedstock": 0,
+              "path": [],
+              "stage": 0,
+              "stream": 0,
+              "value": 1200
+            }
+          ],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": [
+            {
+              "feedstock": 0,
+              "path": [],
+              "stage": "feed",
+              "stream": 0,
+              "value": 1200
+            }
+          ]
+        }
+      ],
+      "streams": [
+        {
+          "name": "CHIPS",
+          "unit_cost": 0,
+          "selling_price": "1",
+          "is_product": true
+        },
+        {
+          "name": "WHEY-CFG",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "LIPIDS",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "blocks": [
+        {
+          "name": "BLANK-2",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        },
+        {
+          "name": "OSOLV",
+          "sol": 2,
+          "sol_flu": 2,
+          "flu": 2,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        }
+      ],
+      "streams": [
+        {
+          "name": "PULP",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "BLACK-LIQUOR",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "HMW-LIGNIN",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "blocks": [
+        {
+          "name": "BLANK-3",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        },
+        {
+          "name": "ENZ-HYD",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        }
+      ],
+      "streams": [
+        {
+          "name": "GLUCOSE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "LACTOSE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "PROTEINS",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "blocks": [
+        {
+          "name": "BLANK-4",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        },
+        {
+          "name": "PROD-LAC",
+          "sol": 0,
+          "sol_flu": 0,
+          "flu": 0,
+          "direct_costs": [],
+          "outputs": [],
+          "supplies": [],
+          "offsite_utilities": [],
+          "purchased_utilities": [],
+          "key_streams": []
+        }
+      ],
+      "streams": [
+        {
+          "name": "ACETONE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": true
+        },
+        {
+          "name": "BUTANOL",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": true
+        },
+        {
+          "name": "LAC-ACID",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": true
+        },
+        {
+          "name": "PLA",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": true
+        },
+        {
+          "name": "ISOPRENE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": true
+        },
+        {
+          "name": "GAS-PURGE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "LIQ-PURGE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        },
+        {
+          "name": "SOL-PURGE",
+          "unit_cost": 0,
+          "selling_price": 0,
+          "is_product": false
+        }
+      ]
+    }
+  ],
+  "supplies": [
+    {
+      "name": "SULF-ACID",
+      "unit_cost": 0
+    },
+    {
+      "name": "ENZYME",
+      "unit_cost": 0
+    },
+    {
+      "name": "REP-ETHANOL",
+      "unit_cost": 0
+    },
+    {
+      "name": "REP-WATER",
+      "unit_cost": 0
+    },
+    {
+      "name": "CSL",
+      "unit_cost": 0
+    },
+    {
+      "name": "MICROORG",
+      "unit_cost": 0
+    },
+    {
+      "name": "CAL-HYDROX",
+      "unit_cost": 0
+    },
+    {
+      "name": "CATALYST",
+      "unit_cost": 0
+    },
+    {
+      "name": "STEAM",
+      "unit_cost": 0
+    },
+    {
+      "name": "AIR",
+      "unit_cost": 0
+    },
+    {
+      "name": "ISOPARAFFIN",
+      "unit_cost": 0
+    },
+    {
+      "name": "YEAST-EXTRACT",
+      "unit_cost": 0
+    },
+    {
+      "name": "CO2",
+      "unit_cost": 0
+    }
+  ],
+  "offsite_utilities": [
+    {
+      "name": "WATER",
+      "units": "kg/h",
+      "a": 9.304,
+      "b": 0.96
+    },
+    {
+      "name": "COOLING-WATER",
+      "units": "kg/h",
+      "a": 666666,
+      "b": 0.68
+    },
+    {
+      "name": "REFRIGERANT",
+      "units": "kg/h",
+      "a": 6666666,
+      "b": 0.77
+    },
+    {
+      "name": "VAPOR",
+      "units": "kg/h",
+      "a": 1764.3,
+      "b": 0.81
+    },
+    {
+      "name": "ENERGY",
+      "units": "kW.h",
+      "a": 666666,
+      "b": 0.83
+    }
+  ],
+  "purchased_utilities": [
+    {
+      "name": "WATER",
+      "unit_cost": 0.02,
+      "units": "USD/kg"
+    },
+    {
+      "name": "ENERGY",
+      "unit_cost": 0.001,
+      "units": "USD/kW.h"
+    }
+  ],
+  "optimization_options": {
+    "objective_function": "NPV",
+    "lifetime": 10,
+    "rate_of_interest": 0.1,
+    "base_salary": 20000,
+    "annualization_factor": 0.3,
+    "big_M": 1000000000,
+    "blanks": 3
+  },
+  "queue": [
+    {
+      "source_file": "algo.bkp",
+      "data": {
+        "feedstock": 1,
+        "blocks": [
+          {
+            "stage": 0,
+            "index": 1,
+            "key_stream": {
+              "aspen_name": "EGRAND",
+              "index": 0,
+              "stage": "feed"
+            },
+            "outputs": [
+              {
+                "aspen_name": "EG-CHIPS",
+                "index": 0,
+                "stage": 1
+              }
+            ],
+            "supplies": [],
+            "active": true
+          },
+          {
+            "stage": 1,
+            "index": 1,
+            "key_stream": {
+              "aspen_name": "EG-CHIPS",
+              "index": 0,
+              "stage": 0
+            },
+            "outputs": [
+              {
+                "aspen_name": "PULP",
+                "index": 0,
+                "stage": 2
+              },
+              {
+                "aspen_name": "CONCBL",
+                "index": 1,
+                "stage": 2
+              }
+            ],
+            "supplies": [
+              {
+                "aspen_name": "ETHANOL",
+                "index": 2
+              }
+            ],
+            "active": true
+          },
+          {
+            "stage": 2,
+            "index": 1,
+            "key_stream": {
+              "aspen_name": "PULP",
+              "index": 0,
+              "stage": 1
+            },
+            "outputs": [],
+            "supplies": [],
+            "active": false
+          },
+          {
+            "stage": 3,
+            "index": 1,
+            "key_stream": {
+              "aspen_name": "GLUC",
+              "index": 0,
+              "stage": 2
+            },
+            "outputs": [],
+            "supplies": [],
+            "active": true
+          }
+        ]
+      }
+    }
+  ]
+}
